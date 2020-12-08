@@ -1,2 +1,4 @@
+#!/usr/bin/python3
+
 def pow(a, b):
-    pass
+    return (a ** b)
