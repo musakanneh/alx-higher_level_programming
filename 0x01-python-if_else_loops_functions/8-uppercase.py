@@ -1,0 +1,2 @@
+def uppercase(str):
+    pass
