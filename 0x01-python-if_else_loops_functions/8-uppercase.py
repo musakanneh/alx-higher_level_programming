@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def uppercase(str):
     for i in range(len(str)):
         uni_code = ord(str[i])
