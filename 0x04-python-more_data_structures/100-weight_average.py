@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def weight_average(my_list=[]):
     """
     A function that returns the weighted
