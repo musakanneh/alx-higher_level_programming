@@ -7,7 +7,7 @@ def safe_print_division(a, b):
     and prints the result.
     """
     try:
-        num_div = a / 2
+        num_div = a / b
     except (TypeError, ZeroDivisionError):
         num_div = None
     finally:
