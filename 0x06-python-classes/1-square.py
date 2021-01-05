@@ -3,7 +3,4 @@ class Square:
     size.
 
     """
-    __size = None
-
-    def __init__(self, __size):
-        self.__size = __size
+    _size = None
