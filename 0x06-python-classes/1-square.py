@@ -3,4 +3,10 @@ class Square:
     size.
 
     """
-    _size = None
+
+    def __init__(self, size):
+        """Initializes the size variable as a private
+        instance artribute
+
+        """
+        self.__size = size
