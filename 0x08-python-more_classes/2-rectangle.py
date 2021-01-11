@@ -25,7 +25,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Property retriever, for retreiving 
+        """Property retriever, for retreiving
         the rectangle height
 
         """

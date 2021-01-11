@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-"""Area and Perimeter
-Task:
-    print() and str() should print the rectangle
-    with the character #
-    
-"""
+"""Area and Perimeter"""
 
 
 class Rectangle:
@@ -30,7 +25,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Property retriever, for retreiving 
+        """Property retriever, for retreiving
         the rectangle height
 
         """

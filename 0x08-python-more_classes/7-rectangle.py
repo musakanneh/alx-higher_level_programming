@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Area and Perimeter
-    
-"""
+"""Area and Perimeter"""
 
 
 class Rectangle:
@@ -37,7 +35,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Property retriever, for retreiving 
+        """Property retriever, for retreiving
         the rectangle height
 
         """

@@ -3,7 +3,7 @@
 Task:
     print() and str() should print the rectangle
     with the character #
-    
+
 """
 
 
@@ -30,7 +30,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Property retriever, for retreiving 
+        """Property retriever, for retreiving
         the rectangle height
 
         """
