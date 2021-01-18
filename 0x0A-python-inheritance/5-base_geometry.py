@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""An empty class"""
+"""Geometry module.
+Author: Kanneh
+
+"""
 
 
 class BaseGeometry:
