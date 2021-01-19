@@ -1,18 +1,24 @@
 #!/usr/bin/python3
-"""Student to JSON"""
+"""Student to JSON
+"""
 
 
 class Student:
-    """A class defines a student"""
+    """Represent a student."""
 
     def __init__(self, first_name, last_name, age):
-        """Instantiates the student's attributes"""
-        self.first_name = first_name
-        self.last_name = last_name
+        """Initializes a new Student.
 
-    def to_json(self):
-        """retrieves a dictionary representation of a
-        Student instance (same as 10-class_to_json.py)
+        Args:
+            first_name (str): The first name of the student.
+            last_name (str): The last name of the student.
+            age (int): The age of the student.
 
         """
-        pass
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self):
+        """Gets a dictionary representation of the Student."""
+        return self.__dict__
