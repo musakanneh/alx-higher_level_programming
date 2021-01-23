@@ -1,15 +1,19 @@
 #!/usr/bin/python3
-"""Test model for the rectangle class"""
+"""Validate attributes"""
+
+
 import unittest
-from models.rectangle import Rectangle
 from models.base import Base
+from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
     """Tests the rectangle model"""
 
-    def solution(self):
-        """"""
+    def test_rectangle_value(self):
+        """Tests the rectangle value"""
+        with self.assertRaises(ValueError):
+            Rectangle(1, 0)
 
 
 if __name__ == '__main__':
