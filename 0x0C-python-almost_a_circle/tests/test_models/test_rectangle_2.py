@@ -6,7 +6,7 @@ from models.base import Base
 
 
 class TestRectangle(unittest.TestCase):
-    """A class test the rectangle model"""
+    """Tests the rectangle model"""
 
     def test_id(self):
         """Tests for Id"""
@@ -24,10 +24,12 @@ class TestRectangle(unittest.TestCase):
     def test_valid_params(self):
         """Test for valid parameters"""
         # r4 = Rectangle(3, 5, 2, 8, 108)
-        # self.assertEqual([r4.width, r4.height, r4.x, r4.y, r4.id],
+        # self.assertEqual([r4.width, r4.height,
+        # r4.x, r4.y, r4.id],
         #                  [3, 5, 2, 8, 108])
         # r6 = Rectangle(43, 23)
-        # self.assertEqual([r6.width, r6.height], [43, 23])
+        # self.assertEqual([r6.width, r6.height],
+        # [43, 23])
         pass
 
     def test_default_params(self):
