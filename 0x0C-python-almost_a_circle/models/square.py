@@ -30,6 +30,7 @@ class Square(Rectangle):
     def size(self, value):
         """Sets the size of square"""
         self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
         """Updates the public class
@@ -39,11 +40,11 @@ class Square(Rectangle):
         """
         if not args and not kwargs:
             return
-        if args is not None:
-            attrs = ["id", "size", "x", "y"]
+        if args:
+            attributes = ["id", "size", "x", "y"]
             for i, j in enumerate(args):
-                if i < len(attrs):
-                    setattr(self, attrs[i], j)
+                if i < len(attributes):
+                    setattr(self, attributes[i], j)
         else:
             for k, v in kwargs.items():
                 if hasattr(self, k):
