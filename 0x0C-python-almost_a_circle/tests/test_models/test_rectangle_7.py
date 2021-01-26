@@ -8,9 +8,9 @@ from contextlib import redirect_stdout
 from models.base import Base
 
 
-class TestRectangleClass_Display(unittest.TestCase):
+class TestRectangleClassDisplay(unittest.TestCase):
 
-    """Test cases for ractangle, task 7"""
+    """Test cases for rectangle, task 7"""
 
     def tearDown(self):
         """Teardown"""
@@ -47,12 +47,6 @@ class TestRectangleClass_Display(unittest.TestCase):
         with redirect_stdout(f):
             r1.display()
         self.assertEqual(f.getvalue(), s)
-
-    def test_exceptions(self):
-        """Test exceptions"""
-        with self.assertRaises(TypeError):
-            r1 = Rectangle(2, 3, 2, 2)
-            r1.display(32)
 
     def test_square(self):
         """Test if square is inheriting display method"""
