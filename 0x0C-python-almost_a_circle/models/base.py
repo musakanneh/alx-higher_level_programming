@@ -9,10 +9,9 @@ import turtle
 
 class Base:
     """Represents the base class
-
     Observation:
         The class is used to manage id attribute
-        in all your future classes and to avoid duplicating 
+        in all your future classes and to avoid duplicating
         the same code (by extension, same bugs)
     """
 
@@ -122,15 +121,15 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         """Loads from csv file"""
-        l = []
+        list_instance = []
         name = cls.__name__ + ".csv"
         if os.path.isfile(name):
             with open(name, "r") as file:
                 reader = csv.DictReader(file)
                 for row in reader:
                     d = {key: int(value) for key, value in row.items()}
-                    l.append(cls.create(**d))
-            return l
+                    list_instance.append(cls.create(**d))
+            return list_instance
         return []
 
     @staticmethod
