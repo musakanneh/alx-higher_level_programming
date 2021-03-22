@@ -16,5 +16,5 @@
 - [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 - [Built-in Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 
-## Nodes
+## Notes
 The [Process.argv](https://nodejs.org/api/process.html#process_process_argv) property returns an array containing the command-line arguments passed when the Node.js process was launched. The first element will be process.execPath. See process.argv0 if access to the original value of argv[0] is needed. The second element will be the path to the JavaScript file being executed. The remaining elements will be any additional command-line arguments.
