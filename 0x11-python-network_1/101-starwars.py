@@ -1,13 +1,20 @@
 #!/usr/bin/python3
-"""Fetches https://intranet.hbtn.io/status."""
-import urllib.request
+"""
+Python script that takes in a string and sends
+a search request to the Star Wars API, with pagination
+"""
+from sys import argv
+import requests
 
 
 if __name__ == "__main__":
-    request = urllib.request.Request("https://intranet.hbtn.io/status")
-    with urllib.request.urlopen(request) as response:
-        body = response.read()
-        print("Body response:")
-        print("\t- type: {}".format(type(body)))
-        print("\t- content: {}".format(body))
-        print("\t- utf8 content: {}".format(body.decode("utf-8")))
+    r = requests.get('https://swapi.co/api/people/?search={}'.format(argv[1]))
+    j = r.json()
+    l = j.get('results')
+    print('Number of results:', j.get('count'))
+    while j.get('next') is not None:
+        r = requests.get(j.get('next'))
+        j = r.json()
+        l += j.get('results')
+    for i in l:
+        print(i.get('name'))
